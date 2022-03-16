@@ -1,0 +1,18 @@
+nav{
+    background-color: #2f3136;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #ebebed;
+    input{
+        margin: 0 5px;
+        padding: 8px;
+        border: none;
+    }
+
+    button{
+        padding: 8px 20px;
+        border: none;
+    }
+}

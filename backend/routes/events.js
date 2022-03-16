@@ -16,6 +16,7 @@ router.route('/add').post((req, res) => {
     const location = req.body.location;
     // const duration = Number(req.body.duration);
     const date = Date.parse(req.body.date);
+    const flyerImage = req.body.flyerImage;
 
     const newEvent = new Event({
         username,
@@ -24,6 +25,7 @@ router.route('/add').post((req, res) => {
         location,
         // duration,
         date,
+        flyerImage
     });
 
     newEvent.save()
@@ -55,6 +57,7 @@ router.route('/update/:id').post((req, res) => {
             event.location = req.body.location;
             // event.duration = Number(req.body.duration);
             event.date = Date.parse(req.body.date);
+            event.flyerImage = req.body.flyerImage;
 
             event.save()
                 .then(() => res.json('Event updated!'))

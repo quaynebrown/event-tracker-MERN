@@ -25,7 +25,19 @@ const eventSchema = new Schema({
     date: {
         type: Date,
         required: true
+    },
+    flyerImage: {
+        type: String,
+        required: true
     }
+    /*flyerImage: {
+        name: String,
+        desc: String,
+        img: {
+            data: Buffer,
+            contentType: String
+        }
+    }*/
 },
     {
         timestamps: true

@@ -1,0 +1,28 @@
+.event{
+    // border:1px solid red; 
+    margin-bottom: 30px;
+    // padding: 10px;
+
+    &:first-child{
+        margin-top: 20px;
+    }
+}
+
+.event-header{
+    background-color: rgb(44, 43, 43);
+    padding: 10px 5px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.event-body{
+    padding: 10px 5px;
+}
+
+.flyer-container{
+    max-width: 150px;
+    img{
+        width: 100%;
+    }
+}
